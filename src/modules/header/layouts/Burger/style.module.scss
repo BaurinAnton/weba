@@ -1,0 +1,161 @@
+@keyframes showRotateTop {
+    from {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+    to {transform: rotate(45deg);}
+}
+@keyframes showRotateDown {
+    from {transform: rotate(0deg);
+        margin-top: 0em;}
+    50% {transform: rotate(-20deg);
+        margin-top: -0.2625em;}
+    to {transform: rotate(-45deg);
+        margin-top: -0.5625em;}
+}
+@keyframes rotateTop {
+    from {transform: rotate(40deg);}
+    50% {transform: rotate(20deg);}
+    to {transform: rotate(0deg);}
+}
+@keyframes rotateDown {
+    from {transform: rotate(-45deg);
+        margin-top: -0.5625em;}
+    50% {transform: rotate(-20deg);
+        margin-top: -0.2625em;}
+    to {transform: rotate(0deg);
+        margin-top: 0em;}
+}
+
+.burger {
+    display: flex;
+    align-items: center;
+    .column:nth-of-type(1),
+    .column:nth-of-type(3) {
+        span {
+            display: block;
+            border-radius: 0.6875em;
+            width: 0.1875em;
+            height: 3.125em;
+            background-color: #f64848;
+            transform: matrix(1, 0.2, -0.09, 0.98, 0, 0);
+        }
+    }
+    .column:nth-of-type(2) {
+        margin: 0 0.375em;
+        span {
+            display: block;
+            border-radius: 0.6875em;
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                height: 0.1875em;
+                background-color: white;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                margin-bottom: 0.435em;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(3) {
+                width: 2.125em;
+            }
+            &:nth-of-type(2) {
+                width: 1.5625em;
+                margin-left: 0.8125em;
+            }
+        }
+    }
+}
+.burgerNoShow {
+    display: flex;
+    align-items: center;
+    .column:nth-of-type(1),
+    .column:nth-of-type(3) {
+        span {
+            display: block;
+            border-radius: 0.6875em;
+            width: 0.1875em;
+            height: 3.125em;
+            background-color: #f64848;
+            transform: matrix(1, 0.2, -0.09, 0.98, 0, 0);
+        }
+    }
+    .column:nth-of-type(2) {
+        margin: 0 0.375em;
+        span {
+            display: block;
+            border-radius: 0.6875em;
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                height: 0.1875em;
+                background-color: white;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                margin-bottom: 0.435em;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(3) {
+                width: 2.125em;
+            }
+            &:nth-of-type(2) {
+                width: 1.5625em;
+                margin-left: 0.8125em;
+            }
+            &:nth-of-type(1) {
+                animation: rotateTop 100ms 1 linear;
+            }
+            &:nth-of-type(3) {
+                animation: rotateDown 100ms 1 linear;
+            } 
+        }
+    }
+}
+.burgerShow {
+    display: flex;
+    align-items: center;
+    .column:nth-of-type(1),
+    .column:nth-of-type(3) {
+        span {
+            display: block;
+            border-radius: 0.6875em;
+            width: 0.1875em;
+            height: 3.125em;
+            background-color: #f64848;
+            transform: matrix(1, 0.2, -0.09, 0.98, 0, 0);
+        }
+    }
+    .column:nth-of-type(2) {
+        margin: 0 0.375em;
+        span {
+            display: block;
+            border-radius: 0.6875em;
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                height: 0.1875em;
+                background-color: white;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                margin-bottom: 0.435em;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(3) {
+                width: 2.125em;
+            }
+            &:nth-of-type(2) {
+                display: none;
+            }
+            &:nth-of-type(1) {
+                animation: showRotateTop 100ms 1 linear;
+                transform: rotate(45deg);
+            }
+            &:nth-of-type(3) {
+                animation: showRotateDown 100ms 1 linear;
+                transform: rotate(-45deg);
+                margin-top: -0.5625em;
+            }
+        }
+    }
+}

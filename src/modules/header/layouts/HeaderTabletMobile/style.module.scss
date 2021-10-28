@@ -1,0 +1,17 @@
+.header {
+    background-color: black;
+    .container {
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.875em 0;
+        .logo {
+            img {
+                width: 5em;
+                height: 1.75em;
+            }
+        }
+    }
+}
