@@ -1,0 +1,44 @@
+.header {
+    background-color: black;
+    .container {
+        max-width: 1280px;
+        @media (max-width: 1279px) {
+            max-width: 95%;
+        }
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.875em 0;
+        .logo {
+            img {
+                width: 5em;
+                height: 1.75em;
+            }
+        }
+        .nav {
+            ul {
+                display: flex;
+                li {
+                    margin-right: 2.18em;
+                    @media (max-width: 992px) {
+                        margin-right: 1em;
+                    }
+                    &:nth-last-of-type(1) {
+                        margin-right: 0;
+                    }
+                    .navLink {
+                        color: white;
+                        font-size: 1.25em;
+                        font-weight: 700;
+                        text-decoration: none;
+                        &:hover {
+                            color: rgb(185, 185, 185);
+                            transition-duration: 100ms;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
