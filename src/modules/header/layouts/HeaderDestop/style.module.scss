@@ -1,7 +1,16 @@
 .header {
     background-color: black;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    @media (max-width: 1280px) {
+        font-size: 12.6px;
+    }
+    @media (max-width: 992px) {
+        font-size: 9.6px;
+    }
     .container {
-        max-width: 1280px;
+        max-width: 1200px;
         @media (max-width: 1279px) {
             max-width: 95%;
         }
