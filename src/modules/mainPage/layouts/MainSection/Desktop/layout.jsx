@@ -5,7 +5,6 @@ import { Wave } from 'react-animated-text';
 import smile from 'img/mainPage/MainSection/smile.png'
 import star from 'img/mainPage/MainSection/star.svg'
 import elipse from 'img/mainPage/MainSection/elipse.svg'
-import lineLetter from 'img/mainPage/MainSection/lineLetter.svg'
 import arrow from 'img/mainPage/MainSection/arrow.svg'
 
 export const Desktop = () => {

@@ -2,7 +2,7 @@ import style from './style.module.scss'
 import { HEADER_DESKTOP } from './constants'
 import logo from 'img/header/logo.svg'
 
-export const HeaderDesktop = () => {
+export const Desktop = () => {
     const HeaderConstants = HEADER_DESKTOP.list.map((list) => (
         <li key={list.id}>
             <a href="/" className={style.navLink}>{list.content}</a>

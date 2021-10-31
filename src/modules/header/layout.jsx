@@ -1,5 +1,5 @@
-import { HeaderDesktop } from "./layouts"
-import { HeaderTabletMobile } from "./layouts"
+import { Desktop } from "./layouts"
+import { Mobile } from "./layouts"
 import { useWindowSize } from 'hook'
 
 export const Header = () => {
@@ -7,8 +7,8 @@ export const Header = () => {
     return (
         <>
             {
-                (windowSize.width > 768) ? <HeaderDesktop />
-                    : <HeaderTabletMobile />
+                (windowSize.width > 768) ? <Desktop />
+                    : <Mobile />
             }
         </>
     )

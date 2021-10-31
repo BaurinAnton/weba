@@ -1,1 +1,0 @@
-export { HeaderTabletMobile } from './layout'

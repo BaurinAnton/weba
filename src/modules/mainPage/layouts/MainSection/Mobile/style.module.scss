@@ -1,0 +1,108 @@
+.container {
+    background-color: black;
+    .wrapper {
+        margin: 0 auto;
+        max-width: 95%;
+        font-size: calc(9.9px + (24 + 24 * 0.3) * ((100vw - 320px) / 992));
+        .row:nth-child(1) {
+            display: flex;
+            align-items: center;
+            color: white;
+            span:nth-child(1) {
+                font-size: 1em;
+                font-weight: 700;
+                margin-right: 0.625em;
+            }
+            .line {
+                display: block;
+                width: 3.75em;
+                height: 0.125em;
+                background-color: white;
+                margin-right: 0.625em;
+            }
+            img {
+                width: 1em;
+                height: 1.3125em;
+            }
+        }
+        .row:nth-child(2) {
+            margin-top: 2.25em;
+            line-height: 3.459375em;
+            span {
+                font-size: 2.5625em;
+                font-weight: 600;
+                color: white;
+            }
+            .column:nth-of-type(1) {
+                span:nth-of-type(2) {
+                    color: #f64848;
+                }
+            }
+            .column:nth-of-type(2) {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 2.3125em;
+                    margin-left: 2.75em;
+                }
+            }
+            .column:nth-of-type(3) {
+                span:nth-of-type(2) {
+                    color: #0038ff;
+                }
+            }
+        }
+        .row:nth-child(3) {
+            .column:nth-of-type(1) {
+                img:nth-of-type(1) {
+                    width: 6.334375em;
+                    height: 100%;
+                    margin-bottom: -1.5em;
+                }
+                img:nth-of-type(2) {
+                    width: 14.4625em;
+                    height: 100%;
+                    margin-left: 1em;
+                }
+                img:nth-of-type(3) {
+                    width: 5.17875em;
+                    height: 6em;
+                    margin-bottom: -1em;
+                }
+            }
+            .column:nth-of-type(2) {
+                display: flex;
+                align-items: center;
+                .design {
+                    font-size: 0.9375em;
+                    font-weight: 600;
+                    color: white;
+                }
+                .circle {
+                    border: 0.0625em solid white;
+                    width: 8.125em;
+                    height: 8.125em;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 5em;
+                    span {
+                        color: white;
+                        font-size: 1.125em;
+                        font-weight: 600;
+                        white-space: nowrap;
+                        margin-right: -3.4em;
+                    }
+                }
+            }
+            .column:nth-of-type(3) {
+                img {
+                    width: 14.8125em;
+                    height: 3.47em;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}

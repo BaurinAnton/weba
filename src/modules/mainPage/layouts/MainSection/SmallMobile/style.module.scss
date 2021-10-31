@@ -1,0 +1,102 @@
+.container {
+    background-color: black;
+    .wrapper {
+        margin: 0 auto;
+        max-width: 95%;
+        font-size: calc(17px + (24 + 24 * 0.3) * ((100vw - 320px) / 590));
+        .row:nth-child(1) {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-top: 2em;
+            span:nth-child(1) {
+                font-size: 1em;
+                font-weight: 700;
+                margin-right: 0.625em;
+            }
+            .line {
+                display: block;
+                width: 3.75em;
+                height: 0.125em;
+                background-color: white;
+                margin-right: 0.625em;
+            }
+            img {
+                width: 1em;
+                height: 1.3125em;
+            }
+        }
+        .row:nth-child(2) {
+            // margin-top: 2.25em;
+            line-height: 2.71375em;
+            span {
+                font-size: 1.625em;
+                font-weight: 600;
+                color: white;
+            }
+            .column:nth-of-type(1) {
+                span:nth-of-type(2) {
+                    color: #f64848;
+                }
+            }
+            .column:nth-of-type(2) {
+                display: flex;
+                align-items: center;
+                img:nth-of-type(1) {
+                    width: 1.375em;
+                    height: 100%;
+                    margin-left: 0.8em;
+                }
+                img:nth-of-type(2) {
+                    width: 3.89em;
+                    height: 100%;
+                    margin-left: 0.8em;
+                }
+            }
+            .column:nth-of-type(3) {
+                span:nth-of-type(2) {
+                    color: #0038ff;
+                }
+            }
+        }
+        .row:nth-child(3) {
+            position: relative;
+            margin-bottom: 1.375em;
+            .circle {
+                border: 0.0625em solid white;
+                border-radius: 100%;
+                width: 8.0625em;
+                height: 8.0625em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 1em;
+                &:hover {
+                    background-color: #F64848;
+                    transition-duration: 100ms;
+                }
+                span {
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    margin-left: 3em;
+                }
+            }
+            img {
+                width: 3em;
+                position: absolute;
+                top: 0;
+                left: 12em;
+            }
+        }
+        .row:nth-child(4) {
+            color: white;
+            font-size: 0.875em;
+            font-weight: 600;
+            line-height: 1.8em;
+            letter-spacing: 0.25em;
+            width: 21em;
+        }
+    }
+}
