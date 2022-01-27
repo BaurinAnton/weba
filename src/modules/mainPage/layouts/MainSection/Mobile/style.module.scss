@@ -78,23 +78,6 @@
                     font-weight: 600;
                     color: white;
                 }
-                .circle {
-                    border: 0.0625em solid white;
-                    width: 8.125em;
-                    height: 8.125em;
-                    border-radius: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-left: 5em;
-                    span {
-                        color: white;
-                        font-size: 1.125em;
-                        font-weight: 600;
-                        white-space: nowrap;
-                        margin-right: -3.4em;
-                    }
-                }
             }
             .column:nth-of-type(3) {
                 img {

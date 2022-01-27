@@ -1,0 +1,185 @@
+.services {
+    background-color: black;
+    padding-top: 5.625em;
+    @media (max-width: 768px) {
+        padding-top: 2.625em;
+    }
+    @media (max-width: 1280px) {
+        font-size: 12.6px;
+    }
+    @media (max-width: 992px) {
+        font-size: 9.6px;
+    }
+    .wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        position: relative;
+        @media (max-width: 1279px) {
+            max-width: 95%;
+        }
+        .row:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            margin-left: 0.4em;
+            .column:nth-of-type(1) {
+                span {
+                    color: white;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                }
+            }
+            .column:nth-of-type(2) {
+                background-color: white;
+                width: 7.6875em;
+                height: 0.125em;
+                margin: 0 0.5em;
+            }
+            .column:nth-of-type(3) {
+                span:nth-of-type(1),
+                span:nth-of-type(3) {
+                    color: #f64848;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                }
+                span:nth-of-type(2) {
+                    color: white;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                }
+            }
+        }
+        .row:nth-of-type(2) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -2.4em;
+            .column:nth-of-type(1) {
+                h2 {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 3.75em;
+                }
+            }
+            .column:nth-of-type(2) {
+                img {
+                    width: 14.5em;
+                    height: 11.5em;
+                }
+            }
+        }
+        .row:nth-of-type(3) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 3.125em;
+            .column {
+                width: 33.3125em;
+                margin-bottom: 6.25em;
+                h3 {
+                    color: white;
+                    font-size: 2.1875em;
+                    font-weight: 600;
+                    margin-bottom: 0.86em;
+                }
+                p {
+                    color: white;
+                    font-size: 1.25em;
+                    font-weight: 500;
+                    line-height: 1.5em;
+                }
+            }
+        }
+        .rowFixed {
+            position: fixed;
+            top: 31.1em;
+            padding-bottom: 19.1em;
+            .ellipseText {
+                position: relative;
+                .ellipse {
+                    width: 19.125em;
+                    height: 8.9em;
+                    position: absolute;
+                    left: 7em;
+                }
+                p {
+                    position: absolute;
+                    top: 0.5em;
+                    font-size: 2.1875em;
+                    font-weight: 600;
+                    color: white;
+                    width: 15.71em;
+                    line-height: 1.43em;
+                }
+            }
+        }
+        .rowTop {
+            position: absolute;
+            top: 12em;
+            padding-bottom: 19.1em;
+            .ellipseText {
+                position: relative;
+                .ellipse {
+                    width: 19.125em;
+                    height: 8.9em;
+                    position: absolute;
+                    left: 7em;
+                }
+                p {
+                    position: absolute;
+                    top: 0.5em;
+                    font-size: 2.1875em;
+                    font-weight: 600;
+                    color: white;
+                    width: 15.71em;
+                    line-height: 1.43em;
+                }
+            }
+        }
+        .rowBottom {
+            position: absolute;
+            bottom: 13.2em;
+            padding-bottom: 19.1em;
+            .ellipseText {
+                position: relative;
+                .ellipse {
+                    width: 19.125em;
+                    height: 8.9em;
+                    position: absolute;
+                    left: 7em;
+                }
+                p {
+                    position: absolute;
+                    top: 0.5em;
+                    font-size: 2.1875em;
+                    font-weight: 600;
+                    color: white;
+                    width: 15.71em;
+                    line-height: 1.43em;
+                }
+            }
+        }
+        .row:nth-of-type(5) {
+            position: relative;
+            .column {
+                display: flex;
+                justify-content: space-between;
+                .bttns {
+                    width: 32.75em;
+                    height: 14.8125em;
+                }
+                div:nth-of-type(1) {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .arrow {
+                position: absolute;
+                top: -10.5em;
+                left: 20em;
+                width: 15.375em;
+                height: 19em;
+            }
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.container {
+    background-color: black;
+    padding-top: 5.625em;
+    padding-bottom: 30em;
+    @media (max-width: 768px) {
+        padding-top: 2.625em;
+    }
+    @media (max-width: 1280px) {
+        font-size: 12.6px;
+    }
+    @media (max-width: 992px) {
+        font-size: 9.6px;
+    }
+    .wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        @media (max-width: 1279px) {
+            max-width: 95%;
+        }
+        .row:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            margin-left: 0.4em;
+            .column:nth-of-type(1) {
+                span {
+                    color: white;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                }
+            }
+            .column:nth-of-type(2) {
+                background-color: white;
+                width: 7.6875em;
+                height: 0.125em;
+                margin: 0 0.5em;
+            }
+            .column:nth-of-type(3) {
+                span:nth-of-type(1),
+                span:nth-of-type(3) {
+                    color: #f64848;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                }
+                span:nth-of-type(2) {
+                    color: white;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                }
+            }
+        }
+        .row:nth-of-type(2) {
+            margin-top: 1.5em;
+            margin-bottom: 6.25em;
+            span {
+                color: white;
+                font-size: 3.75em;
+                font-weight: 700;
+            }
+        }
+        .row:nth-of-type(3) {
+            .column {
+                display: grid;
+                grid-template-columns: 7fr 40fr 15fr 30fr;
+                align-items: center;
+                color: white;
+                &:nth-of-type(1) {
+                    border-top: 0.0625em solid white;
+                }
+                border-bottom: 0.0625em solid white;
+                padding: 3.125em 0;
+                span:nth-of-type(1) {
+                    font-size: 1.375em;
+                    font-weight: 600;
+                }
+                span:nth-of-type(2) {
+                    font-size: 2.1875em;
+                    font-weight: 600;
+                }
+                span:nth-of-type(3) {
+                    font-size: 1.375em;
+                    font-weight: 600;
+                }
+                span:nth-of-type(4) {
+                    font-size: 1.375em;
+                    font-weight: 600;
+                }
+            }
+            .column {
+                a {
+                    position: absolute;
+                    img {
+                        width: 0;
+                    }
+                }
+                &:hover {
+                    background-color: rgb(56, 56, 56);
+                    a {
+                        position: absolute;
+                        left: calc(50% - 16em);
+                        img {
+                            width: 32em;
+                            transition-duration: 150ms;
+                        }
+                    }
+                }
+            }
+        }
+        .row:nth-of-type(4) {
+            position: relative;
+            .elipse {
+                position: absolute;
+                top: 8.125em;
+                width: 21.1875em;
+                height: 16.1875em;
+            }
+            .arrow {
+                position: absolute;
+                right: 27em;
+                top: 2em;
+                width: 10em;
+            }
+            .circle {
+                position: absolute;
+                width: 21.375em;
+                height: 21.375em;
+                top: 6.25em;
+                right: 5em;
+                border: 0.0625em solid white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                    background-color: #f64848;
+                    transition-duration: 100ms;
+                }
+                @media (max-width: 1280px) {
+                    right: 4em;
+                }
+                span {
+                    margin-right: -4em;
+                    color: white;
+                    font-size: 1.7em;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.services {
+    background-color: black;
+    font-size: calc(17px + (24 + 24 * 0.3) * ((100vw - 320px) / 590));
+    .wrapper {
+        margin: 0 auto;
+        max-width: 95%;
+        .row:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            .column:nth-of-type(1) {
+                span {
+                    color: white;
+                    font-size: 0.875em;
+                    font-weight: 700;
+                }
+            }
+            .column:nth-of-type(2) {
+                width: 3.75em;
+                height: 0.125em;
+                background-color: white;
+                margin: 0 0.5em;
+            }
+            .column:nth-of-type(3) {
+                span:nth-of-type(1),
+                span:nth-of-type(3) {
+                    color: #f64848;
+                    font-size: 0.875em;
+                    font-weight: 700;
+                }
+                span:nth-of-type(2) {
+                    color: white;
+                    font-size: 0.875em;
+                    font-weight: 700;
+                }
+            }
+        }
+        .row:nth-of-type(2) {
+            margin-top: 0.5em;
+            .column {
+                h2 {
+                    font-size: 1.4375em;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+        }
+        .row:nth-of-type(3) {
+            margin-top: 3.125em;
+            .column {
+                .ellipseText {
+                    position: relative;
+                    img {
+                        width: 11.25em;
+                        height: 5em;
+                        position: absolute;
+                        top: -0.8em;
+                        left: 2em;
+                    }
+                    p {
+                        color: white;
+                        font-size: 1em;
+                        font-weight: 600;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+        .row:nth-of-type(4) {
+            margin-top: 3.125em;
+            .column {
+                margin-bottom: 2.5em;
+                h3 {
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 600;
+                    margin-bottom: 1.875em;
+                }
+                p {
+                    font-size: 1em;
+                    font-weight: 500;
+                    color: white;
+                    line-height: 1.5em;
+                }
+            }
+        }
+        .row:nth-of-type(5) {
+            position: relative;
+            .arrow {
+                width: 6.25em;
+                height: 6.25em;
+                position: absolute;
+                left: 10.5em;
+                top: -2em;
+            }
+            .column {
+                div:nth-of-type(1) {
+                    margin-left: 0;
+                }
+                .wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 18.25em;
+                        height: 8.25em;
+                    }
+                }
+            }
+        }
+    }
+}

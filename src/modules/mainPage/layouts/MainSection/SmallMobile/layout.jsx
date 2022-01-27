@@ -2,6 +2,7 @@ import { Wave } from 'react-animated-text';
 
 import style from './style.module.scss'
 import { MAIN_SECTION_CONST } from './constants'
+import { CircleDiscussProject } from 'modules/mainPage';
 
 import smile from 'img/mainPage/MainSection/smile.png'
 import star from 'img/mainPage/MainSection/star.svg'
@@ -12,7 +13,7 @@ import arrowMobile from 'img/mainPage/MainSection/arrowMobile.svg'
 
 export const SmallMobile = () => {
     return (
-        <div className={style.container}>
+        <section className={style.container}>
             <div className={style.wrapper}>
                 <div className={style.row}>
                     <span>{'/ 1 /'}</span>
@@ -35,15 +36,13 @@ export const SmallMobile = () => {
                     </div>
                 </h1>
                 <div className={style.row}>
-                    <div className={style.circle}>
-                        <span>{MAIN_SECTION_CONST.button}</span>
-                    </div>
+                    <CircleDiscussProject />
                     <img src={arrowMobile} alt="" />
                 </div>
                 <div className={style.row}>
                     <Wave text={'современные технологии. долгосрочная поддержка. удобный дизайн'} effect="fadeOut" speed={16} />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

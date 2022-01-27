@@ -13,7 +13,7 @@
     .wrapper {
         max-width: 1200px;
         margin: 0 auto;
-        padding-top: 2em;
+        padding-top: 3.75em;
         position: relative;
         @media (max-width: 1279px) {
             max-width: 95%;
@@ -63,7 +63,7 @@
         }
         .elipse {
             position: absolute;
-            top: 2.5em;
+            top: 3.5em;
             left: 44em;
             width: 21.1875em;
             height: 8.8125em;
@@ -74,28 +74,6 @@
             left: 55em;
             width: 3.3em;
             height: 6.47em;
-        }
-        .circle {
-            position: absolute;
-            top: 14em;
-            left: 57em;
-            border: 2px solid white;
-            border-radius: 100%;
-            width: 15.625em;
-            height: 15.625em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &:hover {
-                background-color: #F64848;
-                transition-duration: 100ms;
-            }
-            span {
-                color: white;
-                font-size: 1.6em;
-                font-weight: 600;
-                margin-right: -3.4em;
-            }
         }
         div:nth-child(6) {
             color: white;

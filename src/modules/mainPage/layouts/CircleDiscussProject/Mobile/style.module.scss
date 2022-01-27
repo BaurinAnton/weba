@@ -1,0 +1,21 @@
+.circle {
+    border: 0.0625em solid white;
+    width: 8.125em;
+    height: 8.125em;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5em;
+    &:hover {
+        background-color: #F64848;
+        transition-duration: 100ms;
+    }
+    span {
+        color: white;
+        font-size: 1.125em;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-right: -3.4em;
+    }
+}

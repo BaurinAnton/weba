@@ -1,0 +1,113 @@
+.services {
+    background-color: black;
+    font-size: calc(9.9px + (24 + 24 * 0.3) * ((100vw - 320px) / 992));
+    .wrapper {
+        margin: 0 auto;
+        max-width: 95%;
+        .row:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            .column:nth-of-type(1) {
+                span {
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 700;
+                }
+            }
+            .column:nth-of-type(2) {
+                width: 3.75em;
+                height: 0.125em;
+                background-color: white;
+                margin: 0 0.5em;
+            }
+            .column:nth-of-type(3) {
+                span:nth-of-type(1),
+                span:nth-of-type(3) {
+                    color: #f64848;
+                    font-size: 1em;
+                    font-weight: 700;
+                }
+                span:nth-of-type(2) {
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 700;
+                }
+            }
+        }
+        .row:nth-of-type(2) {
+            margin-top: 1.25em;
+            .column {
+                h2 {
+                    font-size: 2.0625em;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+        }
+        .row:nth-of-type(3) {
+            .column:nth-of-type(1) {
+                margin-top: 3.125em;
+                .ellipseText {
+                    position: relative;
+                    img {
+                        width: 12.875em;
+                        height: 6.5em;
+                        position: absolute;
+                        top: -1.2em;
+                        left: 3em;
+                    }
+                    p {
+                        font-size: 1.375em;
+                        font-weight: 600;
+                        color: white;
+                        width: 16.455em;
+                        line-height: 1.36em;
+                    }
+                }
+            }
+            .column:nth-of-type(2) {
+            }
+        }
+        .row:nth-of-type(4) {
+            margin-top: 3.125em;
+            .column {
+                margin-bottom: 3.125em;
+                h3 {
+                    font-size: 1.375em;
+                    font-weight: 600;
+                    color: white;
+                    margin-bottom: 1.3636em;
+                }
+                p {
+                    font-size: 1.1825em;
+                    color: white;
+                    font-weight: 500;
+                    line-height: 1.583em;
+                }
+            }
+        }
+        .row:nth-of-type(5) {
+            position: relative;
+            .arrow {
+                width: 6.4375em;
+                height: 7.23em;
+                position: absolute;
+                top: -2.7em;
+                left: 11.5em;
+            }
+            .column {
+                div:nth-of-type(1) {
+                    margin-left: 0;
+                }
+                .wrapper {
+                    display: flex;
+                    justify-content: center;
+                    .bttns {
+                        width: 25em;
+                        height: 11.25em;
+                    }
+                }
+            }
+        }
+    }
+}

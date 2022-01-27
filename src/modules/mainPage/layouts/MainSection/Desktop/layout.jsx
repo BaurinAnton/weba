@@ -1,6 +1,7 @@
 import style from './style.module.scss'
 import { MAIN_SECTION_CONST } from './constants'
 import { Wave } from 'react-animated-text';
+import { CircleDiscussProject } from 'modules/mainPage';
 
 import smile from 'img/mainPage/MainSection/smile.png'
 import star from 'img/mainPage/MainSection/star.svg'
@@ -10,7 +11,7 @@ import arrow from 'img/mainPage/MainSection/arrow.svg'
 export const Desktop = () => {
     return (
         <>
-            <div className={style.container}>
+            <section className={style.container}>
                 <div className={style.wrapper}>
                     <div className={style.column}>
                         <span>{'/ 1 /'}</span>
@@ -34,12 +35,10 @@ export const Desktop = () => {
                     </h1>
                     <img className={style.elipse} src={elipse} alt="" />
                     <img className={style.arrow} src={arrow} alt="" />
-                    <div className={style.circle}>
-                        <span>{MAIN_SECTION_CONST.button}</span>
-                    </div>
+                    <CircleDiscussProject/>
                     <Wave text="современные технологии. долгосрочная поддержка. удобный дизайн" effect="fadeOut" speed={16}/>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

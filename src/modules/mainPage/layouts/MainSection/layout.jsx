@@ -1,6 +1,7 @@
 import { Desktop } from './Desktop'
 import { Mobile } from './Mobile'
 import { SmallMobile } from './SmallMobile'
+
 import { useWindowSize } from 'hook'
 
 export const MainSection = () => {
